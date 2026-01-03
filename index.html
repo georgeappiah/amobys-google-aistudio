@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Amobys Engineering Ghana</title>
+    <title>Amobys Engineering Ghana | Leading Engineering Consultancy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .font-header { font-family: 'Montserrat', sans-serif; }
         .hero-gradient {
-            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.7)), url('https://picsum.photos/seed/engineering/1920/1080');
+            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.75)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
         }
@@ -27,10 +27,10 @@
 </head>
 <body class="bg-slate-50 text-slate-900">
     <!-- Navigation -->
-    <header class="fixed w-full z-50 transition-all duration-300 bg-[#003366] py-4 shadow-lg">
+    <header class="fixed w-full z-50 transition-all duration-300 bg-[#003366] py-4 shadow-xl">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-[#FFCC00] rounded-md flex items-center justify-center font-bold text-[#003366] text-xl">A</div>
+                <div class="w-10 h-10 bg-[#FFCC00] rounded-md flex items-center justify-center font-bold text-[#003366] text-xl shadow-lg">A</div>
                 <span class="font-header text-xl font-extrabold tracking-tight text-white uppercase">
                     Amobys <span class="text-[#FFCC00]">Engineering</span>
                 </span>
@@ -42,56 +42,47 @@
                 <a href="projects.html" class="font-semibold text-white hover:text-[#FFCC00] transition-colors">Projects</a>
                 <a href="contact.html" class="font-semibold text-white hover:text-[#FFCC00] transition-colors">Contact</a>
             </nav>
+            <button class="md:hidden text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16m-7 6h7" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="relative h-screen flex items-center justify-center hero-gradient text-white pt-16">
         <div class="container mx-auto px-4 text-center">
-            <h1 class="text-5xl md:text-7xl font-header font-black mb-6">
-                ENGINEERING <span class="text-[#FFCC00]">EXCELLENCE</span><br/>IN AFRICA
+            <h1 class="text-5xl md:text-7xl font-header font-black mb-6 tracking-tight">
+                OPTIMIZING <span class="text-[#FFCC00]">ENGINEERING</span><br/>SUPPLY CHAINS
             </h1>
-            <p class="text-xl md:text-2xl text-slate-100 max-w-2xl mx-auto mb-10">
-                Ghana's premier engineering consultancy delivering structural integrity and innovative infrastructure solutions.
+            <p class="text-xl md:text-2xl text-slate-200 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Expert Supply Chain Management and Technical Support services tailored for Ghana and the West African sub-region.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="projects.html" class="bg-[#FFCC00] text-[#003366] px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition-all shadow-xl">View Portfolio</a>
-                <a href="contact.html" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-[#003366] transition-all">Request Quote</a>
+                <a href="services.html" class="bg-[#FFCC00] text-[#003366] px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition-all shadow-2xl">Our Expertise</a>
+                <a href="contact.html" class="border-2 border-white text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-[#003366] transition-all">Get a Consultation</a>
             </div>
         </div>
     </section>
 
-    <!-- Stats Bar -->
-    <section class="bg-[#002244] py-12">
-        <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-            <div><div class="text-4xl font-bold text-[#FFCC00]">15+</div><div class="text-xs uppercase tracking-widest text-slate-400">Years Exp</div></div>
-            <div><div class="text-4xl font-bold text-[#FFCC00]">250+</div><div class="text-xs uppercase tracking-widest text-slate-400">Projects</div></div>
-            <div><div class="text-4xl font-bold text-[#FFCC00]">50+</div><div class="text-xs uppercase tracking-widest text-slate-400">Engineers</div></div>
-            <div><div class="text-4xl font-bold text-[#FFCC00]">100%</div><div class="text-xs uppercase tracking-widest text-slate-400">Safety</div></div>
-        </div>
-    </section>
-
-    <!-- Services Preview -->
+    <!-- Core Offerings Preview -->
     <section class="py-24 bg-white">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-[#003366] text-4xl font-header font-extrabold mb-4">Core Competencies</h2>
-            <div class="w-20 h-1 bg-[#FFCC00] mx-auto mb-12"></div>
-            <p class="text-slate-600 max-w-2xl mx-auto mb-16">We provide multidisciplinary engineering solutions tailored to the unique landscape of the West African sub-region.</p>
-            <div class="grid md:grid-cols-3 gap-8 mb-12">
-                <div class="p-8 border border-slate-100 rounded-2xl hover:shadow-xl transition-all">
-                    <h3 class="text-xl font-bold text-[#003366] mb-3">Civil Engineering</h3>
-                    <p class="text-slate-500">Infrastructure, roads, and drainage systems designed for durability.</p>
+            <h2 class="text-[#003366] text-4xl font-header font-extrabold mb-4">Strategic Solutions</h2>
+            <div class="w-24 h-1 bg-[#FFCC00] mx-auto mb-16"></div>
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div class="group p-10 bg-slate-50 rounded-3xl border border-slate-100 hover:shadow-2xl transition-all text-left">
+                    <div class="w-14 h-14 bg-[#003366] text-[#FFCC00] rounded-xl flex items-center justify-center mb-8 text-2xl font-bold shadow-lg">01</div>
+                    <h3 class="text-2xl font-header font-bold text-[#003366] mb-4">Supply Chain Outsourcing</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">End-to-end management of EPC project supply chains, specialized warehouse audits, and strategic procurement services.</p>
+                    <a href="services.html" class="text-[#003366] font-bold group-hover:text-[#FFCC00] transition-colors flex items-center gap-2">View Sub-services <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-width="2"/></svg></a>
                 </div>
-                <div class="p-8 border border-slate-100 rounded-2xl hover:shadow-xl transition-all">
-                    <h3 class="text-xl font-bold text-[#003366] mb-3">Structural Design</h3>
-                    <p class="text-slate-500">Advanced analysis for high-rise buildings and industrial structures.</p>
-                </div>
-                <div class="p-8 border border-slate-100 rounded-2xl hover:shadow-xl transition-all">
-                    <h3 class="text-xl font-bold text-[#003366] mb-3">Electrical Systems</h3>
-                    <p class="text-slate-500">Comprehensive power solutions for commercial and residential sectors.</p>
+                <div class="group p-10 bg-slate-50 rounded-3xl border border-slate-100 hover:shadow-2xl transition-all text-left">
+                    <div class="w-14 h-14 bg-[#003366] text-[#FFCC00] rounded-xl flex items-center justify-center mb-8 text-2xl font-bold shadow-lg">02</div>
+                    <h3 class="text-2xl font-header font-bold text-[#003366] mb-4">Technical Support</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Dedicated engineering support to ensure operational reliability and high performance across your industrial assets.</p>
+                    <a href="services.html" class="text-[#003366] font-bold group-hover:text-[#FFCC00] transition-colors flex items-center gap-2">Explore Support <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-width="2"/></svg></a>
                 </div>
             </div>
-            <a href="services.html" class="text-[#003366] font-bold border-b-2 border-[#FFCC00] hover:text-[#FFCC00] transition-all">Explore All Services →</a>
         </div>
     </section>
 
@@ -99,28 +90,32 @@
     <footer class="bg-[#001122] text-white py-16">
         <div class="container mx-auto px-4 grid md:grid-cols-4 gap-12">
             <div class="col-span-1 md:col-span-2">
-                <h3 class="text-[#FFCC00] font-header text-2xl font-bold mb-4">AMOBYS ENGINEERING</h3>
-                <p class="text-slate-400 max-w-sm">Providing high-quality engineering consultancy services in Ghana since 2009.</p>
+                <h3 class="text-[#FFCC00] font-header text-2xl font-bold mb-4 uppercase tracking-tighter">AMOBYS ENGINEERING</h3>
+                <p class="text-slate-400 max-w-sm leading-relaxed">Pioneering high-quality engineering consultancy and supply chain solutions in Ghana since 2009. We drive excellence through innovation.</p>
             </div>
             <div>
-                <h4 class="font-bold mb-4 border-b border-[#FFCC00] inline-block">Quick Links</h4>
-                <ul class="space-y-2 text-slate-400 text-sm">
-                    <li><a href="about.html" class="hover:text-white">Our Mission</a></li>
-                    <li><a href="projects.html" class="hover:text-white">Portfolio</a></li>
-                    <li><a href="contact.html" class="hover:text-white">Careers</a></li>
+                <h4 class="font-bold mb-6 border-b-2 border-[#FFCC00] inline-block pb-1">Quick Navigation</h4>
+                <ul class="space-y-3 text-slate-400 text-sm">
+                    <li><a href="about.html" class="hover:text-white transition-colors">Our Story</a></li>
+                    <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+                    <li><a href="projects.html" class="hover:text-white transition-colors">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold mb-4 border-b border-[#FFCC00] inline-block">Contact</h4>
-                <p class="text-slate-400 text-sm">Accra, Ghana<br>info@amobys.com.gh</p>
+                <h4 class="font-bold mb-6 border-b-2 border-[#FFCC00] inline-block pb-1">Connect</h4>
+                <p class="text-slate-400 text-sm">East Legon, Accra - Ghana<br>info@amobys.com.gh</p>
+                <div class="flex gap-4 mt-6">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 hover:bg-[#FFCC00] transition-colors cursor-pointer"></div>
+                    <div class="w-8 h-8 rounded-full bg-slate-800 hover:bg-[#FFCC00] transition-colors cursor-pointer"></div>
+                </div>
             </div>
         </div>
-        <div class="container mx-auto px-4 mt-16 pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
+        <div class="container mx-auto px-4 mt-16 pt-8 border-t border-slate-800/50 text-center text-slate-500 text-[10px] uppercase tracking-widest">
             &copy; 2025 Amobys Engineering Consultancy. All rights reserved.
         </div>
     </footer>
 
-    <!-- AI Consultant Logic -->
     <script type="module" src="consultant.js"></script>
 </body>
 </html>

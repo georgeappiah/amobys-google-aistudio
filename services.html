@@ -6,14 +6,18 @@
     <title>Services | Amobys Engineering Ghana</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; } .font-header { font-family: 'Montserrat', sans-serif; }</style>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-header { font-family: 'Montserrat', sans-serif; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    </style>
 </head>
 <body class="bg-slate-50">
-    <header class="fixed w-full z-50 bg-[#003366] py-4 shadow-lg">
+    <header class="fixed w-full z-50 bg-[#003366] py-4 shadow-xl">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-[#FFCC00] rounded-md flex items-center justify-center font-bold text-[#003366] text-xl">A</div>
-                <span class="font-header text-xl font-extrabold tracking-tight text-white">AMOBYS</span>
+                <div class="w-10 h-10 bg-[#FFCC00] rounded-md flex items-center justify-center font-bold text-[#003366] text-xl shadow-lg">A</div>
+                <span class="font-header text-xl font-extrabold tracking-tight text-white uppercase">AMOBYS</span>
             </a>
             <nav class="hidden md:flex space-x-8">
                 <a href="index.html" class="font-semibold text-white hover:text-[#FFCC00]">Home</a>
@@ -25,36 +29,77 @@
         </div>
     </header>
 
-    <main class="pt-32 pb-24 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h1 class="text-4xl md:text-5xl font-header font-black text-[#003366] mb-4">Core Competencies</h1>
-                <div class="w-24 h-1 bg-[#FFCC00] mx-auto"></div>
+    <main class="pt-32">
+        <!-- Section: Supply Chain -->
+        <section class="py-24 bg-white overflow-hidden">
+            <div class="container mx-auto px-4">
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <span class="text-[#FFCC00] font-bold tracking-widest uppercase text-xs mb-4 block">Capabilities 01</span>
+                    <h1 class="text-4xl md:text-5xl font-header font-black text-[#003366] mb-6">Supply Chain Management Outsourcing</h1>
+                    <p class="text-slate-600 leading-relaxed text-lg">We transform supply chain complexities into competitive advantages, providing end-to-end oversight that ensures your engineering projects stay on track and under budget.</p>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col items-start hover:shadow-lg transition-all">
+                        <div class="text-3xl font-black text-[#003366]/10 mb-4 font-header">A.</div>
+                        <h3 class="text-xl font-bold text-[#003366] mb-4">EPC Project Supply Chain Services</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Handling the complete lifecycle of materials for Engineering, Procurement, and Construction projects. From vendor selection to on-site delivery, we manage every moving part.</p>
+                        <div class="mt-auto pt-4 border-t border-slate-200 w-full text-xs font-bold text-[#FFCC00] uppercase tracking-tighter">Efficiency Focused</div>
+                    </div>
+                    
+                    <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col items-start hover:shadow-lg transition-all">
+                        <div class="text-3xl font-black text-[#003366]/10 mb-4 font-header">B.</div>
+                        <h3 class="text-xl font-bold text-[#003366] mb-4">Warehouse Audit & Staff Training</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Optimizing your storage assets through rigorous audits and empowering your local team with international best practices in logistics and safety management.</p>
+                        <div class="mt-auto pt-4 border-t border-slate-200 w-full text-xs font-bold text-[#FFCC00] uppercase tracking-tighter">Operational Excellence</div>
+                    </div>
+
+                    <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col items-start hover:shadow-lg transition-all">
+                        <div class="text-3xl font-black text-[#003366]/10 mb-4 font-header">C.</div>
+                        <h3 class="text-xl font-bold text-[#003366] mb-4">Procurement Services</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Strategic global sourcing for specialized engineering components. We manage negotiations, quality assurance, and compliance with Ghana Standards Authority (GSA).</p>
+                        <div class="mt-auto pt-4 border-t border-slate-200 w-full text-xs font-bold text-[#FFCC00] uppercase tracking-tighter">Strategic Sourcing</div>
+                    </div>
+                </div>
             </div>
-            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <div class="p-10 border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl transition-all">
-                    <h3 class="text-2xl font-bold text-[#003366] mb-4">Civil Engineering</h3>
-                    <p class="text-slate-600 leading-relaxed">Specializing in the design and management of infrastructure projects including highways, drainage systems, and water supply networks.</p>
-                </div>
-                <div class="p-10 border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl transition-all">
-                    <h3 class="text-2xl font-bold text-[#003366] mb-4">Structural Engineering</h3>
-                    <p class="text-slate-600 leading-relaxed">Providing robust structural solutions for residential complexes, commercial skyscrapers, and industrial facilities.</p>
-                </div>
-                <div class="p-10 border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl transition-all">
-                    <h3 class="text-2xl font-bold text-[#003366] mb-4">Electrical Systems</h3>
-                    <p class="text-slate-600 leading-relaxed">Expert design of internal and external electrical installations, power distribution, and renewable energy integration.</p>
-                </div>
-                <div class="p-10 border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl transition-all">
-                    <h3 class="text-2xl font-bold text-[#003366] mb-4">Procurement & PM</h3>
-                    <p class="text-slate-600 leading-relaxed">Strategic sourcing of engineering materials and end-to-end project management for large-scale developments.</p>
+        </section>
+
+        <!-- Section: Technical Support -->
+        <section class="py-24 bg-[#003366] text-white">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    <div class="lg:w-1/2">
+                        <span class="text-[#FFCC00] font-bold tracking-widest uppercase text-xs mb-4 block">Capabilities 02</span>
+                        <h2 class="text-3xl md:text-5xl font-header font-black mb-8 leading-tight">Technical Support Services</h2>
+                        <p class="text-slate-300 text-lg leading-relaxed mb-8">
+                            Beyond supply chain, Amobys offers high-level engineering support to maintain the structural and electrical integrity of your industrial assets. Our team provides troubleshooting, maintenance planning, and technical audits to ensure long-term reliability.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="border-l-2 border-[#FFCC00] pl-4">
+                                <h4 class="font-bold mb-1">Asset Integrity</h4>
+                                <p class="text-xs text-slate-400">Periodic health checks for infrastructure.</p>
+                            </div>
+                            <div class="border-l-2 border-[#FFCC00] pl-4">
+                                <h4 class="font-bold mb-1">On-Site Support</h4>
+                                <p class="text-xs text-slate-400">Direct technical assistance in the field.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 relative">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop" class="rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" alt="Technical Support">
+                        <div class="absolute -bottom-6 -left-6 bg-[#FFCC00] p-8 rounded-2xl hidden md:block">
+                            <span class="text-[#003366] font-black text-4xl">24/7</span>
+                            <p class="text-[#003366] font-bold text-xs uppercase">Critical Support Availability</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer class="bg-[#001122] text-white py-12">
-        <div class="container mx-auto px-4 text-center text-slate-500 text-xs">
-            &copy; 2025 Amobys Engineering Consultancy.
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-slate-500 text-[10px] uppercase tracking-widest">&copy; 2025 Amobys Engineering Ghana. All Rights Reserved.</p>
         </div>
     </footer>
     <script type="module" src="consultant.js"></script>
