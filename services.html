@@ -1,28 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Amobys Engineering</title>
+    <title>Services | Amobys Engineering Ghana</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .font-header { font-family: 'Montserrat', sans-serif; }
-    </style>
-<script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
-  }
-}
-</script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', sans-serif; } .font-header { font-family: 'Montserrat', sans-serif; }</style>
 </head>
-<body class="bg-slate-50 text-slate-900">
-    <div id="root"></div>
+<body class="bg-slate-50">
+    <header class="fixed w-full z-50 bg-[#003366] py-4 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-[#FFCC00] rounded-md flex items-center justify-center font-bold text-[#003366] text-xl">A</div>
+                <span class="font-header text-xl font-extrabold tracking-tight text-white">AMOBYS</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-semibold text-white hover:text-[#FFCC00]">Home</a>
+                <a href="about.html" class="font-semibold text-white hover:text-[#FFCC00]">About</a>
+                <a href="services.html" class="font-semibold text-[#FFCC00] border-b-2 border-[#FFCC00]">Services</a>
+                <a href="projects.html" class="font-semibold text-white hover:text-[#FFCC00]">Projects</a>
+                <a href="contact.html" class="font-semibold text-white hover:text-[#FFCC00]">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-header font-black text-[#003366] mb-4">Core Competencies</h1>
+                <div class="w-24 h-1 bg-[#FFCC00] mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="p-10 border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl transition-all">
+                    <h3 class="text-2xl font-bold text-[#003366] mb-4">Civil Engineering</h3>
+                    <p class="text-slate-600 leading-relaxed">Specializing in the design and management of infrastructure projects including highways, drainage systems, and water supply networks.</p>
+                </div>
+                <div class="p-10 border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl transition-all">
+                    <h3 class="text-2xl font-bold text-[#003366] mb-4">Structural Engineering</h3>
+                    <p class="text-slate-600 leading-relaxed">Providing robust structural solutions for residential complexes, commercial skyscrapers, and industrial facilities.</p>
+                </div>
+                <div class="p-10 border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl transition-all">
+                    <h3 class="text-2xl font-bold text-[#003366] mb-4">Electrical Systems</h3>
+                    <p class="text-slate-600 leading-relaxed">Expert design of internal and external electrical installations, power distribution, and renewable energy integration.</p>
+                </div>
+                <div class="p-10 border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl transition-all">
+                    <h3 class="text-2xl font-bold text-[#003366] mb-4">Procurement & PM</h3>
+                    <p class="text-slate-600 leading-relaxed">Strategic sourcing of engineering materials and end-to-end project management for large-scale developments.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#001122] text-white py-12">
+        <div class="container mx-auto px-4 text-center text-slate-500 text-xs">
+            &copy; 2025 Amobys Engineering Consultancy.
+        </div>
+    </footer>
+    <script type="module" src="consultant.js"></script>
 </body>
 </html>
